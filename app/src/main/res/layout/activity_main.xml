@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para inserir o nome do aluno -->
+
+    <EditText
+        android:id="@+id/editTextNomeAluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Aluno" />
+
+    <!-- Campo para inserir a área de escolha -->
+
+    <!-- Botão para adicionar à lista -->
+
+    <!-- RecyclerView para listar os alunos -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextAreaEscolha"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:hint="Área de Escolha" />
+
+        <Button
+            android:id="@+id/buttonInserir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inserir" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAlunos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView para exibir a quantidade de alunos -->
+    <TextView
+        android:id="@+id/textViewQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Alunos"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão para zerar a lista -->
+    <Button
+        android:id="@+id/buttonZerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZERAR"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
