@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class AlunoAdapter(private val listaAlunos: MutableList<Aluno>) : RecyclerView.Adapter<AlunoAdapter.AlunoViewHolder>() {
+class AlunoAdapter(
+    private val listaAlunos: MutableList<Aluno>) : RecyclerView.Adapter<AlunoAdapter.AlunoViewHolder>() {
 
     class AlunoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textViewNomeAluno: TextView = itemView.findViewById(R.id.textViewNomeAluno)

@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import java.util.Date
 import java.util.Locale
 
-class MainActivity<Aluno> : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var alunoAdapter: AlunoAdapter
